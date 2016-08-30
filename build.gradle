@@ -1,6 +1,7 @@
 apply plugin: 'eclipse'
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
+apply plugin: 'findbugs'
 
 dependencies {
 	compile "org.springframework:spring-webmvc:$springVersion"

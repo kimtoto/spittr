@@ -56,17 +56,6 @@ public class SpittleControllerTest {
 	      .andExpect(model().attribute("spittle", expectedSpittle));
 	  }
 	 
-	 @Test
-	 public void shouldShowRegistration() throws Exception {
-		 
-		 SpitterController controller = new SpitterController();
-		 MockMvc mockMvc = standaloneSetup(controller).build();
-		 
-		 mockMvc.perform(get("/spitter/register"))
-		 	.andExpect(view().name("registerForm"));
-	 }
-	
-
 	/**
 	 * 
 	 * @param count
