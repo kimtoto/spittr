@@ -40,7 +40,7 @@ public class SpittleControllerTest {
 			.andExpect(model().attribute("spittleList", hasItems(expectedSpittles.toArray())));
 		
 	}
-	
+	 
 	 @Test
 	  public void testSpittle() throws Exception {
 	    Spittle expectedSpittle = new Spittle("Hello", new Date());
